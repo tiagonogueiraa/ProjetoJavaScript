@@ -10,37 +10,54 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script language= "javascript">
-            alert("Seja bem vindo!");
+
+            nomes = new Array("Walter", "Joao", "Bruno", "Franciso", "Jose");
+            nomesInvertidos = nomes.reverse();
+            
+            document.write(nomesInvertidos);
+            
+            nomesJuntos = nomes.join("- ");
+
+
+            document.write(nomesJuntos);
+            nomesJuntos = nomes.join();
+
+
+
+            document.write(nomesJuntos);
+
+            /* exemplos
+             alert("Seja bem vindo!");
              var a, inteiro, flutuante;
-            a ="4,25kg";
-            inteiro = parseInt(a);
-            flutuante = parseFloat(a);
-            document.write("o valor da variavel a é " +a);
-            document.write("<p>o valor da variavel a é " +inteiro);
-            document.write("<p>o valor da variavel a é " +flutuante);
-            
-            
-            /*
-            var num = prompt('Informe o numero','');// não usa isso faz tempo!
-            document.write('O numero digitado foi ' + num);
-            documento.write("Aqui já é javascript!");
-            
-           */
-                   
-            
-            
-            
+             a ="4,25kg";
+             inteiro = parseInt(a);
+             flutuante = parseFloat(a);
+             document.write("o valor da variavel a é " +a);
+             document.write("<p>o valor da variavel a é " +inteiro);
+             document.write("<p>o valor da variavel a é " +flutuante);
+             
+             
+             /*
+             var num = prompt('Informe o numero','');// não usa isso faz tempo!
+             document.write('O numero digitado foi ' + num);
+             documento.write("Aqui já é javascript!");
+             
+             */
+
+
+
+
             //comentario de uma linha
-            
+
             /* 
              * comentario com mais de uma
              * linha 
              * 
              * */
-            
-            
-            
-            
+
+
+
+
         </script>
     </head>
     <body>
