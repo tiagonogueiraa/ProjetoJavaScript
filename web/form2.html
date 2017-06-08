@@ -29,7 +29,7 @@ and open the template in the editor.
              function SomenteNumero(e)
              {
                  var tecla=(window.event)?event.keyCode:e.which;
-                 
+              //pesquisar na tabela ascs para saber o numero correspondetes as teclas   
                  if((tecla>47 && tecla<58))
                      return true;
                  else
@@ -39,6 +39,8 @@ and open the template in the editor.
                             else 
                                 return false;
                  }
+                 
+                 //span pode virar qualquer coisa, uma mensagem, ele é neutro, utiliza id="" 
              }
         </script>
     </head>
