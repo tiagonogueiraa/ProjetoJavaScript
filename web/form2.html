@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function validacao() {
+           nome = document.form1.nome.value
+           email = document.form1.email.value
+           
+           msg = ""
+                if(nome=="" || email ==""){
+                    if(nome == "") {
+                        msg= "\n NOME"}
+                    if(email==""){
+                        msg = msg + "\n EMAIL"}
+                    alert("Favor Preencher os campos abaixo obrigatórios" + msg)
+                    return false
+                    }else {
+                        return true}                    
+                }
+                
+             function SomenteNumero(e)
+             {
+                 var tecla=(window.event)?event.keyCode:e.which;
+                 
+                 if((tecla>47 && tecla<58))
+                     return true;
+                 else
+                 {
+                     if(tecla==8 || tecla==0)
+                         return true;
+                            else 
+                                return false;
+                 }
+             }
+        </script>
+    </head>
+    <body>
+        <div><h1>Form 1</h1></div>
+        <form name="form1" action="pagina.html" method="post" onsubmit="return validacao()">
+            
+            Email: <input type="text" name="email" size="20">
+            
+            Nome: <input type="text" name="nome" size="20">
+            
+            CPF: <input type="text" name="cpf" size="13" onkeypress="return SomenteNumero(event);">
+            
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
